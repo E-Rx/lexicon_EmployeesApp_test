@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesApp.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesApp.Terminal", "EmployeesApp.Terminal\EmployeesApp.Terminal.csproj", "{4DA0562D-772B-409B-B8FB-1D1CAC43E4F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesApp.Application.Tests", "EmployeesApp.Application.Tests\EmployeesApp.Application.Tests.csproj", "{19C3A792-E3A7-4C54-864D-D04BF24AC875}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4DA0562D-772B-409B-B8FB-1D1CAC43E4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DA0562D-772B-409B-B8FB-1D1CAC43E4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DA0562D-772B-409B-B8FB-1D1CAC43E4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C3A792-E3A7-4C54-864D-D04BF24AC875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C3A792-E3A7-4C54-864D-D04BF24AC875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C3A792-E3A7-4C54-864D-D04BF24AC875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C3A792-E3A7-4C54-864D-D04BF24AC875}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
