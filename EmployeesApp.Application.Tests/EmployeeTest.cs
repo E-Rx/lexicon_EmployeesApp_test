@@ -12,7 +12,7 @@ namespace EmployeesApp.Application.Tests
     {
 
         [Fact]
-        public void Add_the_employee()
+        public void Add_the_employee_AndInitialCapital()
         {
 
             var mockRepo = new Mock<IEmployeeRepository>();
@@ -23,8 +23,8 @@ namespace EmployeesApp.Application.Tests
             var employee = new Employee
             {
                 Id = 1,
-                Name = "Toto",
-                Email = "toto@mail.com",
+                Name = "toto",
+                Email = "TOTO@mail.com",
             };
 
             //act
