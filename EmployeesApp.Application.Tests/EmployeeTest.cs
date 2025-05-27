@@ -11,10 +11,8 @@ namespace EmployeesApp.Application.Tests
 
     {
 
-
-
         [Fact]
-        public void Adds_the_employee()
+        public void Add_the_employee()
         {
 
             var mockRepo = new Mock<IEmployeeRepository>();
@@ -33,7 +31,11 @@ namespace EmployeesApp.Application.Tests
             employeeService.Add(employee);
 
             //assert
-            mockRepo.Verify(o => o.Add(employee));
+            mockRepo.Verify(o => o.Add(It.Is<Employee>(e =>
+                 e.Id == 1 &&
+                 e.Name == "Toto" &&
+                 e.Email == "toto@toto.com"
+                 )), Times.Exactly(1));
 
         }
 
