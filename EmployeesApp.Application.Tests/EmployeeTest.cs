@@ -24,7 +24,7 @@ namespace EmployeesApp.Application.Tests
             {
                 Id = 1,
                 Name = "Toto",
-                Email = "toto@toto.com",
+                Email = "toto@mail.com",
             };
 
             //act
@@ -34,7 +34,7 @@ namespace EmployeesApp.Application.Tests
             mockRepo.Verify(o => o.Add(It.Is<Employee>(e =>
                  e.Id == 1 &&
                  e.Name == "Toto" &&
-                 e.Email == "toto@toto.com"
+                 e.Email == "toto@mail.com"
                  )), Times.Exactly(1));
 
         }
